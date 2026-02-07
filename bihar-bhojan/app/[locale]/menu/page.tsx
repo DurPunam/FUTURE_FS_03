@@ -39,9 +39,9 @@ export default function MenuPage() {
   };
 
   return (
-    <div className="min-h-screen bg-[#FEF3E7] pt-24 pb-16">
+    <div className="min-h-screen bg-light dark:bg-dark pt-24 pb-16">
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-[#C2410C] to-[#9A3412] text-white py-16">
+      <section className="bg-gradient-to-br from-terracotta to-terracotta-dark text-white py-16">
         <div className="container mx-auto px-4">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
@@ -50,7 +50,7 @@ export default function MenuPage() {
             className="text-center"
           >
             <h1 className="text-5xl md:text-6xl font-bold mb-4">Our Menu</h1>
-            <p className="text-xl text-[#FEF3E7] max-w-2xl mx-auto">
+            <p className="text-xl text-light max-w-2xl mx-auto">
               Explore our authentic Bihari delicacies, crafted with love and tradition
             </p>
           </motion.div>
@@ -63,7 +63,7 @@ export default function MenuPage() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.2, duration: 0.6 }}
-          className="bg-white rounded-2xl shadow-xl p-6 mb-8"
+          className="bg-white dark:bg-slate-800 rounded-2xl shadow-xl p-6 mb-8"
         >
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             <SearchBar searchQuery={searchQuery} onSearchChange={setSearchQuery} />
@@ -71,7 +71,7 @@ export default function MenuPage() {
             
             {/* Inline Dietary Filter */}
             <div className="w-full">
-              <label className="block text-sm font-medium text-[#111827] mb-2">
+              <label className="block text-sm font-medium text-gray-900 dark:text-gray-100 mb-2">
                 Dietary Preference
               </label>
               <div className="flex gap-2 flex-wrap">
@@ -87,7 +87,7 @@ export default function MenuPage() {
                         ${
                           isActive
                             ? `${DIETARY_COLORS[dietary]} text-white shadow-md`
-                            : 'bg-white text-gray-700 hover:bg-gray-100 border border-gray-200'
+                            : 'bg-white dark:bg-slate-700 text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-slate-600 border border-gray-200 dark:border-slate-600'
                         }
                       `}
                       whileHover={{ scale: 1.05 }}
@@ -109,8 +109,8 @@ export default function MenuPage() {
           transition={{ delay: 0.3, duration: 0.6 }}
           className="mb-6"
         >
-          <p className="text-[#111827] text-lg">
-            Showing <span className="font-bold text-[#C2410C]">{filteredItems.length}</span> dishes
+          <p className="text-gray-900 dark:text-gray-100 text-lg">
+            Showing <span className="font-bold text-terracotta dark:text-turmeric">{filteredItems.length}</span> dishes
           </p>
         </motion.div>
 
@@ -140,8 +140,8 @@ export default function MenuPage() {
             className="text-center py-16"
           >
             <div className="text-6xl mb-4">🍽️</div>
-            <h3 className="text-2xl font-bold text-[#111827] mb-2">No dishes found</h3>
-            <p className="text-gray-600">Try adjusting your filters or search query</p>
+            <h3 className="text-2xl font-bold text-gray-900 dark:text-gray-100 mb-2">No dishes found</h3>
+            <p className="text-gray-600 dark:text-gray-400">Try adjusting your filters or search query</p>
           </motion.div>
         )}
       </div>
@@ -152,7 +152,7 @@ export default function MenuPage() {
         animate={{ scale: 1 }}
         transition={{ delay: 0.5, type: 'spring', stiffness: 200 }}
         onClick={() => setIsCartOpen(true)}
-        className="fixed bottom-8 right-8 bg-[#C2410C] text-white p-4 rounded-full shadow-2xl hover:bg-[#9A3412] transition-all duration-300 z-40"
+        className="fixed bottom-8 right-8 bg-terracotta text-white p-4 rounded-full shadow-2xl hover:bg-terracotta-dark transition-all duration-300 z-40"
         aria-label="Open cart"
       >
         <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
