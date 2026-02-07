@@ -34,14 +34,16 @@ export default function Navbar() {
   return (
     <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
       scrolled 
-        ? 'bg-white/90 dark:bg-slate-900/90 backdrop-blur-lg shadow-lg' 
-        : 'bg-white/10 dark:bg-slate-900/10 backdrop-blur-md'
+        ? 'bg-white/95 dark:bg-slate-900/95 backdrop-blur-lg shadow-2xl border-b border-gray-200 dark:border-slate-700' 
+        : 'bg-gradient-to-b from-black/60 to-transparent backdrop-blur-sm'
     }`}>
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
-          <Link href="/" className={`text-2xl font-bold transition-colors duration-300 ${
-            scrolled ? 'text-terracotta dark:text-turmeric' : 'text-white'
+          <Link href="/" className={`text-2xl font-bold transition-all duration-300 ${
+            scrolled 
+              ? 'text-terracotta dark:text-turmeric' 
+              : 'text-white drop-shadow-[0_2px_8px_rgba(0,0,0,1)] font-extrabold'
           }`}>
             Bihar Bhojan
           </Link>
@@ -52,10 +54,10 @@ export default function Navbar() {
               <Link
                 key={link.href}
                 href={link.href}
-                className={`font-medium transition-colors duration-300 ${
+                className={`font-semibold text-base transition-all duration-300 ${
                   scrolled 
-                    ? 'text-gray-800 dark:text-gray-200 hover:text-terracotta dark:hover:text-turmeric' 
-                    : 'text-white hover:text-turmeric'
+                    ? 'text-gray-900 dark:text-gray-100 hover:text-terracotta dark:hover:text-turmeric' 
+                    : 'text-white hover:text-turmeric drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)]'
                 }`}
               >
                 {link.label}

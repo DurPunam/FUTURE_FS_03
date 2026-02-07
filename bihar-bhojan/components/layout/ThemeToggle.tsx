@@ -2,7 +2,6 @@
 
 import { useEffect, useState } from 'react';
 import { Moon, Sun } from 'lucide-react';
-import { motion } from 'framer-motion';
 
 export default function ThemeToggle() {
   const [theme, setTheme] = useState<'light' | 'dark'>('light');
@@ -29,40 +28,26 @@ export default function ThemeToggle() {
   // Prevent hydration mismatch
   if (!mounted) {
     return (
-      <div className="w-10 h-10 rounded-full bg-gray-200 dark:bg-gray-700 animate-pulse" />
+      <button
+        className="p-2 rounded-full transition-all duration-300"
+        aria-label="Toggle theme"
+      >
+        <div className="w-5 h-5" />
+      </button>
     );
   }
 
   return (
-    <motion.button
+    <button
       onClick={toggleTheme}
-      className="relative w-10 h-10 rounded-full bg-gradient-to-br from-turmeric to-terracotta dark:from-blue-500 dark:to-purple-600 flex items-center justify-center shadow-lg hover:shadow-xl transition-shadow"
-      whileHover={{ scale: 1.1 }}
-      whileTap={{ scale: 0.95 }}
+      className="p-2 rounded-full hover:bg-gray-100 dark:hover:bg-slate-800 transition-all duration-300"
       aria-label={`Switch to ${theme === 'light' ? 'dark' : 'light'} mode`}
     >
-      <motion.div
-        initial={false}
-        animate={{
-          rotate: theme === 'dark' ? 180 : 0,
-          scale: theme === 'dark' ? 1 : 0,
-        }}
-        transition={{ duration: 0.3 }}
-        className="absolute"
-      >
-        <Moon className="w-5 h-5 text-white" />
-      </motion.div>
-      <motion.div
-        initial={false}
-        animate={{
-          rotate: theme === 'light' ? 0 : -180,
-          scale: theme === 'light' ? 1 : 0,
-        }}
-        transition={{ duration: 0.3 }}
-        className="absolute"
-      >
-        <Sun className="w-5 h-5 text-white" />
-      </motion.div>
-    </motion.button>
+      {theme === 'light' ? (
+        <Moon className="w-5 h-5 text-gray-800" />
+      ) : (
+        <Sun className="w-5 h-5 text-yellow-400" />
+      )}
+    </button>
   );
 }

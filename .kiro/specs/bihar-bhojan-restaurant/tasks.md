@@ -238,7 +238,7 @@ This implementation plan breaks down the Bihar Bhojan restaurant website into in
     - **Validates: Requirements 3.2, 3.3, 3.4**
 
 - [ ] 10. Booking feature components
-  - [~] 10.1 Create BookingForm component
+  - [ ] 10.1 Create BookingForm component
     - Form fields: name, email, phone, date, time, partySize, specialRequests
     - React Hook Form with Zod validation
     - Date picker (no past dates)
@@ -261,18 +261,18 @@ This implementation plan breaks down the Bihar Bhojan restaurant website into in
     - Test date picker restrictions
     - _Requirements: 2.3, 2.4, 2.5_
 
-- [~] 11. Checkpoint - Core features complete
+- [ ] 11. Checkpoint - Core features complete
   - Ensure all tests pass, ask the user if questions arise.
 
 - [ ] 12. Homepage implementation
-  - [~] 12.1 Create Hero component
+  - [ ] 12.1 Create Hero component
     - Large hero image with overlay
     - Restaurant tagline in EN/HI
     - CTA button for table booking
     - Smooth scroll animation
     - _Requirements: 17.1, 17.5_
 
-  - [~] 12.2 Create FeaturedDishes component
+  - [ ] 12.2 Create FeaturedDishes component
     - Display featured menu items
     - Carousel with Framer Motion
     - Add to cart functionality
@@ -282,7 +282,7 @@ This implementation plan breaks down the Bihar Bhojan restaurant website into in
     - **Property 34: Featured Content Display**
     - **Validates: Requirements 17.2**
 
-  - [~] 12.4 Create Testimonials component
+  - [ ] 12.4 Create Testimonials component
     - Display customer testimonials
     - Show ratings (star icons)
     - Carousel or grid layout
@@ -292,14 +292,14 @@ This implementation plan breaks down the Bihar Bhojan restaurant website into in
     - **Property 36: Testimonials Display**
     - **Validates: Requirements 17.4**
 
-  - [~] 12.6 Create LocationPreview component
+  - [ ] 12.6 Create LocationPreview component
     - Embed Google Maps
     - Display address and hours
     - Click-to-call button
     - WhatsApp contact button
     - _Requirements: 10.2, 10.3, 10.4, 10.6, 17.6_
 
-  - [~] 12.7 Create CulturalEvents component
+  - [ ] 12.7 Create CulturalEvents component
     - Display upcoming events
     - Event cards with images
     - Date and time display
@@ -309,14 +309,14 @@ This implementation plan breaks down the Bihar Bhojan restaurant website into in
     - **Property 35: Upcoming Events Display**
     - **Validates: Requirements 17.3**
 
-  - [~] 12.9 Assemble homepage
+  - [ ] 12.9 Assemble homepage
     - Combine all homepage components
     - Add scroll animations
     - Implement SEO metadata
     - _Requirements: 17.1, 8.4, 8.5_
 
 - [ ] 13. Menu page implementation
-  - [~] 13.1 Create menu page layout
+  - [ ] 13.1 Create menu page layout
     - Category navigation sidebar
     - Search bar at top
     - Dietary filter controls
@@ -324,7 +324,7 @@ This implementation plan breaks down the Bihar Bhojan restaurant website into in
     - Responsive layout (mobile: single column, desktop: 3 columns)
     - _Requirements: 4.1, 4.2, 4.4, 9.1, 9.2, 9.3_
 
-  - [~] 13.2 Implement menu filtering logic
+  - [ ] 13.2 Implement menu filtering logic
     - Combine category, dietary, and search filters
     - Update displayed items reactively
     - Show "no results" message when applicable
@@ -334,14 +334,14 @@ This implementation plan breaks down the Bihar Bhojan restaurant website into in
     - **Property 10: Menu Category Organization**
     - **Validates: Requirements 4.1**
 
-  - [~] 13.4 Add cart sidebar to menu page
+  - [ ] 13.4 Add cart sidebar to menu page
     - Floating cart button (mobile)
     - Slide-in cart panel
     - Persistent across page navigation
     - _Requirements: 14.7_
 
 - [ ] 14. Experience page implementation
-  - [~] 14.1 Create experience page
+  - [ ] 14.1 Create experience page
     - Traditional seating section with images
     - Cultural evening events section
     - Cooking workshops section
@@ -355,7 +355,7 @@ This implementation plan breaks down the Bihar Bhojan restaurant website into in
     - _Requirements: 15.1, 15.2, 15.3_
 
 - [ ] 15. About page implementation
-  - [~] 15.1 Create about page
+  - [ ] 15.1 Create about page
     - Owner story section with photo
     - Heritage narrative with cultural imagery
     - Farm-to-table concept explanation
@@ -368,7 +368,7 @@ This implementation plan breaks down the Bihar Bhojan restaurant website into in
     - _Requirements: 16.1, 16.2, 16.3_
 
 - [ ] 16. Contact page implementation
-  - [~] 16.1 Create ContactForm component
+  - [ ] 16.1 Create ContactForm component
     - Form fields: name, email, phone, message
     - React Hook Form with Zod validation
     - Submit to sendContactMessage server action
@@ -381,7 +381,7 @@ This implementation plan breaks down the Bihar Bhojan restaurant website into in
     - **Property 28: Form Error Feedback**
     - **Validates: Requirements 10.5, 13.2, 13.6**
 
-  - [~] 16.3 Create contact page layout
+  - [ ] 16.3 Create contact page layout
     - Contact form on left
     - Google Maps embed on right
     - Restaurant info (address, phone, hours)
@@ -390,19 +390,19 @@ This implementation plan breaks down the Bihar Bhojan restaurant website into in
     - _Requirements: 10.1, 10.2, 10.3, 10.4, 10.6_
 
 - [ ] 17. SEO and metadata implementation
-  - [~] 17.1 Add Schema.org structured data
+  - [ ] 17.1 Add Schema.org structured data
     - Restaurant schema with name, address, phone, hours
     - Menu schema for dishes
     - LocalBusiness schema
     - Add to layout and page components
     - _Requirements: 8.1, 8.6_
 
-  - [~] 17.2 Generate sitemap.xml
+  - [ ] 17.2 Generate sitemap.xml
     - Include all pages (home, menu, experience, about, contact)
     - Use Next.js sitemap generation
     - _Requirements: 8.2_
 
-  - [~] 17.3 Create robots.txt
+  - [ ] 17.3 Create robots.txt
     - Allow all crawlers
     - Reference sitemap
     - _Requirements: 8.3_
@@ -417,18 +417,18 @@ This implementation plan breaks down the Bihar Bhojan restaurant website into in
     - **Property 21: SEO Meta Tags Presence**
     - **Validates: Requirements 8.4, 8.5**
 
-- [~] 18. Checkpoint - Public pages complete
+- [ ] 18. Checkpoint - Public pages complete
   - Ensure all tests pass, ask the user if questions arise.
 
 - [ ] 19. Admin authentication and layout
-  - [~] 19.1 Create AdminLogin component
+  - [ ] 19.1 Create AdminLogin component
     - Password input field
     - Submit to authenticateAdmin server action
     - Store session token in cookie
     - Redirect to dashboard on success
     - _Requirements: 6.1_
 
-  - [~] 19.2 Create admin layout with authentication check
+  - [ ] 19.2 Create admin layout with authentication check
     - Verify session on admin routes
     - Redirect to login if not authenticated
     - Admin navigation menu
@@ -442,7 +442,7 @@ This implementation plan breaks down the Bihar Bhojan restaurant website into in
     - _Requirements: 6.1_
 
 - [ ] 20. Admin dashboard implementation
-  - [~] 20.1 Create BookingsList component
+  - [ ] 20.1 Create BookingsList component
     - Table view of all bookings
     - Columns: name, date, time, party size, status
     - Filter by date and status
@@ -455,14 +455,14 @@ This implementation plan breaks down the Bihar Bhojan restaurant website into in
     - **Property 20: Booking Status Update**
     - **Validates: Requirements 6.3, 6.6**
 
-  - [~] 20.3 Create admin dashboard page
+  - [ ] 20.3 Create admin dashboard page
     - Display bookings list
     - Show summary statistics (total bookings, pending, confirmed)
     - Link to menu editor
     - _Requirements: 6.3_
 
 - [ ] 21. Admin menu editor implementation
-  - [~] 21.1 Create MenuEditor component
+  - [ ] 21.1 Create MenuEditor component
     - Display current menu items in editable table
     - Add new item form
     - Edit existing item inline
@@ -483,21 +483,21 @@ This implementation plan breaks down the Bihar Bhojan restaurant website into in
     - Test image upload
     - _Requirements: 6.2, 6.4_
 
-  - [~] 21.4 Create menu editor page
+  - [ ] 21.4 Create menu editor page
     - Include MenuEditor component
     - Add save confirmation dialog
     - Show success/error messages
     - _Requirements: 6.2_
 
 - [ ] 22. PWA implementation
-  - [~] 22.1 Create web app manifest
+  - [ ] 22.1 Create web app manifest
     - Define app name, icons, theme colors
     - Set display mode to standalone
     - Add to public directory
     - Link in root layout
     - _Requirements: 5.1_
 
-  - [~] 22.2 Implement service worker
+  - [ ] 22.2 Implement service worker
     - Cache menu page and static assets
     - Implement offline fallback
     - Cache-first strategy for images
@@ -509,7 +509,7 @@ This implementation plan breaks down the Bihar Bhojan restaurant website into in
     - **Property 15: Offline Feature Disabling**
     - **Validates: Requirements 5.3, 5.4**
 
-  - [~] 22.4 Add offline indicator to UI
+  - [ ] 22.4 Add offline indicator to UI
     - Detect online/offline status
     - Show banner when offline
     - Disable network-dependent features
@@ -522,7 +522,7 @@ This implementation plan breaks down the Bihar Bhojan restaurant website into in
     - _Requirements: 5.1, 5.2, 5.4_
 
 - [ ] 23. Accessibility implementation
-  - [~] 23.1 Add alt text to all images
+  - [ ] 23.1 Add alt text to all images
     - Update all Image components with descriptive alt text
     - Use empty alt for decorative images
     - _Requirements: 18.1_
@@ -531,7 +531,7 @@ This implementation plan breaks down the Bihar Bhojan restaurant website into in
     - **Property 37: Image Alt Text Presence**
     - **Validates: Requirements 18.1**
 
-  - [~] 23.3 Implement keyboard navigation
+  - [ ] 23.3 Implement keyboard navigation
     - Ensure all interactive elements are focusable
     - Add keyboard event handlers (Enter, Space)
     - Implement focus trap in modals
@@ -542,7 +542,7 @@ This implementation plan breaks down the Bihar Bhojan restaurant website into in
     - **Property 38: Keyboard Navigation Support**
     - **Validates: Requirements 18.3**
 
-  - [~] 23.5 Add ARIA labels and roles
+  - [ ] 23.5 Add ARIA labels and roles
     - Add aria-label to icon buttons
     - Add role attributes to custom components
     - Add aria-live regions for dynamic content
@@ -553,7 +553,7 @@ This implementation plan breaks down the Bihar Bhojan restaurant website into in
     - **Validates: Requirements 18.5**
 
 - [ ] 24. Error handling and resilience
-  - [~] 24.1 Implement error boundaries
+  - [ ] 24.1 Implement error boundaries
     - Create ErrorBoundary component
     - Wrap page components
     - Display user-friendly error messages
@@ -564,7 +564,7 @@ This implementation plan breaks down the Bihar Bhojan restaurant website into in
     - **Property 40: Error Message User-Friendliness**
     - **Validates: Requirements 19.1, 19.4, 19.5**
 
-  - [~] 24.3 Add form input preservation on error
+  - [ ] 24.3 Add form input preservation on error
     - Preserve form values on submission failure
     - Re-populate form fields after error
     - _Requirements: 19.2_
@@ -573,7 +573,7 @@ This implementation plan breaks down the Bihar Bhojan restaurant website into in
     - **Property 41: Form Input Preservation on Error**
     - **Validates: Requirements 19.2**
 
-  - [~] 24.5 Implement image fallback handling
+  - [ ] 24.5 Implement image fallback handling
     - Add onError handler to Image components
     - Display placeholder on load failure
     - _Requirements: 19.3_
@@ -582,7 +582,7 @@ This implementation plan breaks down the Bihar Bhojan restaurant website into in
     - **Property 42: Image Load Failure Handling**
     - **Validates: Requirements 19.3**
 
-  - [~] 24.7 Add content load fallback
+  - [ ] 24.7 Add content load fallback
     - Implement loading skeletons
     - Show fallback content on fetch failure
     - Add retry mechanisms
@@ -593,7 +593,7 @@ This implementation plan breaks down the Bihar Bhojan restaurant website into in
     - **Validates: Requirements 19.6**
 
 - [ ] 25. Responsive design refinement
-  - [~] 25.1 Test and refine mobile layouts
+  - [ ] 25.1 Test and refine mobile layouts
     - Test all pages at 320px, 375px, 414px widths
     - Adjust spacing, font sizes, touch targets
     - Ensure no horizontal scroll
@@ -607,31 +607,31 @@ This implementation plan breaks down the Bihar Bhojan restaurant website into in
     - **Property 23: Touch Target Sizing**
     - **Validates: Requirements 9.6**
 
-  - [~] 25.4 Test and refine tablet layouts
+  - [ ] 25.4 Test and refine tablet layouts
     - Test all pages at 768px, 834px, 1024px widths
     - Optimize grid layouts for tablet
     - _Requirements: 9.2_
 
-  - [~] 25.5 Test and refine desktop layouts
+  - [ ] 25.5 Test and refine desktop layouts
     - Test all pages at 1280px, 1440px, 1920px widths
     - Ensure proper max-width constraints
     - Optimize whitespace and typography
     - _Requirements: 9.3_
 
 - [ ] 26. Performance optimization
-  - [~] 26.1 Optimize images
+  - [ ] 26.1 Optimize images
     - Convert images to WebP format
     - Generate multiple sizes for responsive images
     - Implement lazy loading for below-fold images
     - _Requirements: 7.3, 7.4_
 
-  - [~] 26.2 Implement code splitting
+  - [ ] 26.2 Implement code splitting
     - Use dynamic imports for heavy components
     - Split admin routes into separate bundle
     - Lazy load Framer Motion animations
     - _Requirements: 7.5_
 
-  - [~] 26.3 Optimize fonts
+  - [ ] 26.3 Optimize fonts
     - Use font-display: swap
     - Preload critical fonts
     - Subset fonts to required characters
@@ -644,7 +644,7 @@ This implementation plan breaks down the Bihar Bhojan restaurant website into in
     - _Requirements: 7.2_
 
 - [ ] 27. Analytics integration
-  - [~] 27.1 Set up Google Analytics (free tier)
+  - [ ] 27.1 Set up Google Analytics (free tier)
     - Add GA4 tracking code
     - Configure page view tracking
     - Set up event tracking (bookings, orders, clicks)
@@ -656,20 +656,20 @@ This implementation plan breaks down the Bihar Bhojan restaurant website into in
     - _Requirements: 20.2_
 
 - [ ] 28. Final integration and testing
-  - [~] 28.1 Write E2E tests for critical flows
+  - [ ] 28.1 Write E2E tests for critical flows
     - Test booking flow (form fill, submit, confirmation)
     - Test ordering flow (add to cart, WhatsApp order)
     - Test menu browsing (filter, search, view details)
     - Test admin flow (login, view bookings, edit menu)
     - _Requirements: 2.1, 3.1, 4.1, 6.1_
 
-  - [~] 28.2 Cross-browser testing
+  - [ ] 28.2 Cross-browser testing
     - Test on Chrome, Firefox, Safari, Edge
     - Test on iOS Safari and Android Chrome
     - Fix any browser-specific issues
     - _Requirements: 9.1, 9.2, 9.3_
 
-  - [~] 28.3 Test language switching
+  - [ ] 28.3 Test language switching
     - Verify all content translates correctly
     - Test language persistence
     - Check Hindi font rendering
@@ -682,7 +682,7 @@ This implementation plan breaks down the Bihar Bhojan restaurant website into in
     - _Requirements: All_
 
 - [ ] 29. Deployment preparation
-  - [~] 29.1 Set up environment variables
+  - [ ] 29.1 Set up environment variables
     - ADMIN_PASSWORD
     - EMAIL_API_KEY (Resend/FormSubmit)
     - NEXT_PUBLIC_RESTAURANT_PHONE
@@ -690,21 +690,21 @@ This implementation plan breaks down the Bihar Bhojan restaurant website into in
     - NEXT_PUBLIC_GA_ID (Google Analytics)
     - _Requirements: 6.1, 2.2, 10.1_
 
-  - [~] 29.2 Configure deployment platform
+  - [ ] 29.2 Configure deployment platform
     - Set up Vercel/Netlify/Cloudflare Pages project
     - Configure build settings
     - Set environment variables
     - Configure custom domain (if applicable)
     - _Requirements: 12.4_
 
-  - [~] 29.3 Create deployment documentation
+  - [ ] 29.3 Create deployment documentation
     - Document environment variables
     - Document deployment process
     - Document admin access instructions
     - Create README with project overview
     - _Requirements: 12.4_
 
-- [~] 30. Final checkpoint - Complete system
+- [ ] 30. Final checkpoint - Complete system
   - Ensure all tests pass, ask the user if questions arise.
 
 ## Notes
