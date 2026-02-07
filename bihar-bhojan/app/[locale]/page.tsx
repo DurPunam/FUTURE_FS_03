@@ -89,7 +89,7 @@ export default function HomePage() {
       </section>
 
       {/* ABOUT SECTION */}
-      <section className="py-24 bg-[#FEF3E7]">
+      <section className="py-24 bg-light dark:bg-slate-900 transition-colors duration-300">
         <div className="container mx-auto px-4">
           <motion.div
             initial={{ opacity: 0, y: 50 }}
@@ -98,10 +98,10 @@ export default function HomePage() {
             viewport={{ once: true }}
             className="max-w-4xl mx-auto text-center"
           >
-            <h2 className="text-5xl font-bold text-[#111827] mb-6">
+            <h2 className="text-5xl font-bold text-gray-900 dark:text-white mb-6">
               A Taste of Tradition
             </h2>
-            <p className="text-xl text-gray-700 leading-relaxed mb-8">
+            <p className="text-xl text-gray-700 dark:text-gray-300 leading-relaxed mb-8">
               Bihar Bhojan brings you the authentic flavors of Bihar&apos;s rich culinary heritage. 
               From the famous Litti Chokha to traditional Sattu delicacies, every dish tells a story 
               of generations of culinary excellence.
@@ -109,29 +109,29 @@ export default function HomePage() {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-16">
               <motion.div
                 whileHover={{ y: -10 }}
-                className="bg-white p-8 rounded-2xl shadow-xl"
+                className="card-bg p-8 rounded-2xl shadow-xl border dark:border-slate-700"
               >
-                <UtensilsCrossed className="w-12 h-12 text-[#C2410C] mx-auto mb-4" />
-                <h3 className="text-2xl font-bold text-[#111827] mb-3">Authentic Recipes</h3>
-                <p className="text-gray-600">Traditional recipes passed down through generations</p>
+                <UtensilsCrossed className="w-12 h-12 text-terracotta dark:text-turmeric mx-auto mb-4" />
+                <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-3">Authentic Recipes</h3>
+                <p className="text-gray-600 dark:text-gray-400">Traditional recipes passed down through generations</p>
               </motion.div>
 
               <motion.div
                 whileHover={{ y: -10 }}
-                className="bg-white p-8 rounded-2xl shadow-xl"
+                className="card-bg p-8 rounded-2xl shadow-xl border dark:border-slate-700"
               >
-                <Sparkles className="w-12 h-12 text-[#F59E0B] mx-auto mb-4" />
-                <h3 className="text-2xl font-bold text-[#111827] mb-3">Fresh Ingredients</h3>
-                <p className="text-gray-600">Sourced daily from local markets for authentic taste</p>
+                <Sparkles className="w-12 h-12 text-turmeric mx-auto mb-4" />
+                <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-3">Fresh Ingredients</h3>
+                <p className="text-gray-600 dark:text-gray-400">Sourced daily from local markets for authentic taste</p>
               </motion.div>
 
               <motion.div
                 whileHover={{ y: -10 }}
-                className="bg-white p-8 rounded-2xl shadow-xl"
+                className="card-bg p-8 rounded-2xl shadow-xl border dark:border-slate-700"
               >
-                <Clock className="w-12 h-12 text-[#15803D] mx-auto mb-4" />
-                <h3 className="text-2xl font-bold text-[#111827] mb-3">Made with Love</h3>
-                <p className="text-gray-600">Every dish prepared with care and tradition</p>
+                <Clock className="w-12 h-12 text-leafGreen mx-auto mb-4" />
+                <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-3">Made with Love</h3>
+                <p className="text-gray-600 dark:text-gray-400">Every dish prepared with care and tradition</p>
               </motion.div>
             </div>
           </motion.div>
@@ -139,7 +139,7 @@ export default function HomePage() {
       </section>
 
       {/* FEATURED DISHES */}
-      <section className="py-24 bg-white">
+      <section className="py-24 bg-white dark:bg-slate-800 transition-colors duration-300">
         <div className="container mx-auto px-4">
           <motion.div
             initial={{ opacity: 0, y: 50 }}
@@ -148,10 +148,10 @@ export default function HomePage() {
             viewport={{ once: true }}
             className="text-center mb-16"
           >
-            <h2 className="text-5xl font-bold text-[#111827] mb-4">
+            <h2 className="text-5xl font-bold text-gray-900 dark:text-white mb-4">
               Signature Dishes
             </h2>
-            <p className="text-xl text-gray-600">
+            <p className="text-xl text-gray-600 dark:text-gray-300">
               Discover our most loved traditional delicacies
             </p>
           </motion.div>
@@ -220,7 +220,7 @@ export default function HomePage() {
       </section>
 
       {/* CTA SECTION */}
-      <section className="py-24 bg-gradient-to-br from-[#C2410C] to-[#9A3412] text-white">
+      <section className="py-24 bg-gradient-to-br from-terracotta to-terracotta-dark dark:from-slate-800 dark:to-slate-900 text-white transition-colors duration-300">
         <div className="container mx-auto px-4">
           <motion.div
             initial={{ opacity: 0, y: 50 }}
@@ -232,7 +232,7 @@ export default function HomePage() {
             <h2 className="text-5xl font-bold mb-6">
               Ready to Experience Bihar?
             </h2>
-            <p className="text-xl mb-10 text-[#FEF3E7]">
+            <p className="text-xl mb-10 text-light dark:text-gray-300">
               Order now on WhatsApp or book a table for an unforgettable dining experience
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -240,7 +240,7 @@ export default function HomePage() {
                 <motion.button
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
-                  className="bg-white text-[#C2410C] px-10 py-4 rounded-full text-lg font-semibold shadow-xl hover:bg-gray-100 transition-all duration-300 w-full sm:w-auto"
+                  className="bg-white text-terracotta dark:bg-turmeric dark:text-slate-900 px-10 py-4 rounded-full text-lg font-semibold shadow-xl hover:bg-gray-100 dark:hover:bg-turmeric-light transition-all duration-300 w-full sm:w-auto"
                 >
                   Order Now
                 </motion.button>

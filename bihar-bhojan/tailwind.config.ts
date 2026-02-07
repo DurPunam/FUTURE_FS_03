@@ -1,6 +1,7 @@
 import type { Config } from "tailwindcss";
 
 const config: Config = {
+  darkMode: 'class',
   content: [
     "./pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
@@ -11,8 +12,16 @@ const config: Config = {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
-        terracotta: "#C2410C",
-        turmeric: "#F59E0B",
+        terracotta: {
+          DEFAULT: "#C2410C",
+          light: "#EA580C",
+          dark: "#9A3412",
+        },
+        turmeric: {
+          DEFAULT: "#F59E0B",
+          light: "#FBBF24",
+          dark: "#D97706",
+        },
         leafGreen: "#27AE60",
         dark: "#111827",
         light: "#FEF3E7",

@@ -5,6 +5,7 @@ import { Link } from '@/i18n/routing';
 import { useTranslations } from 'next-intl';
 import { useCart } from '@/contexts/CartContext';
 import LanguageToggle from './LanguageToggle';
+import ThemeToggle from './ThemeToggle';
 
 export default function Navbar() {
   const t = useTranslations();
@@ -33,14 +34,14 @@ export default function Navbar() {
   return (
     <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
       scrolled 
-        ? 'bg-white/80 backdrop-blur-lg shadow-lg' 
-        : 'bg-white/10 backdrop-blur-md'
+        ? 'bg-white/90 dark:bg-slate-900/90 backdrop-blur-lg shadow-lg' 
+        : 'bg-white/10 dark:bg-slate-900/10 backdrop-blur-md'
     }`}>
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
           <Link href="/" className={`text-2xl font-bold transition-colors duration-300 ${
-            scrolled ? 'text-[#C2410C]' : 'text-white'
+            scrolled ? 'text-terracotta dark:text-turmeric' : 'text-white'
           }`}>
             Bihar Bhojan
           </Link>
@@ -53,8 +54,8 @@ export default function Navbar() {
                 href={link.href}
                 className={`font-medium transition-colors duration-300 ${
                   scrolled 
-                    ? 'text-[#111827] hover:text-[#C2410C]' 
-                    : 'text-white hover:text-[#F59E0B]'
+                    ? 'text-gray-800 dark:text-gray-200 hover:text-terracotta dark:hover:text-turmeric' 
+                    : 'text-white hover:text-turmeric'
                 }`}
               >
                 {link.label}
@@ -64,6 +65,7 @@ export default function Navbar() {
 
           {/* Right Side Actions */}
           <div className="flex items-center space-x-4">
+            <ThemeToggle />
             <LanguageToggle />
             
             {/* Cart Badge */}
@@ -71,14 +73,14 @@ export default function Navbar() {
               href="/menu"
               className={`relative p-2 rounded-full transition-all duration-300 ${
                 scrolled 
-                  ? 'hover:bg-gray-100' 
+                  ? 'hover:bg-gray-100 dark:hover:bg-slate-800' 
                   : 'hover:bg-white/20'
               }`}
               aria-label="Shopping cart"
             >
               <svg
                 className={`w-6 h-6 transition-colors duration-300 ${
-                  scrolled ? 'text-[#111827]' : 'text-white'
+                  scrolled ? 'text-gray-800 dark:text-gray-200' : 'text-white'
                 }`}
                 fill="none"
                 stroke="currentColor"
@@ -93,7 +95,7 @@ export default function Navbar() {
                 />
               </svg>
               {cartItemCount > 0 && (
-                <span className="absolute -top-1 -right-1 bg-[#C2410C] text-white text-xs font-bold rounded-full h-5 w-5 flex items-center justify-center">
+                <span className="absolute -top-1 -right-1 bg-terracotta text-white text-xs font-bold rounded-full h-5 w-5 flex items-center justify-center">
                   {cartItemCount}
                 </span>
               )}
@@ -104,17 +106,17 @@ export default function Navbar() {
               onClick={() => setIsMenuOpen(!isMenuOpen)}
               className={`md:hidden p-2 rounded-lg transition-all duration-300 ${
                 scrolled 
-                  ? 'hover:bg-gray-100' 
+                  ? 'hover:bg-gray-100 dark:hover:bg-slate-800' 
                   : 'hover:bg-white/20'
               }`}
               aria-label="Toggle menu"
             >
               {isMenuOpen ? (
-                <svg className={`w-6 h-6 ${scrolled ? 'text-[#111827]' : 'text-white'}`} fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <svg className={`w-6 h-6 ${scrolled ? 'text-gray-800 dark:text-gray-200' : 'text-white'}`} fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
                 </svg>
               ) : (
-                <svg className={`w-6 h-6 ${scrolled ? 'text-[#111827]' : 'text-white'}`} fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <svg className={`w-6 h-6 ${scrolled ? 'text-gray-800 dark:text-gray-200' : 'text-white'}`} fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
                 </svg>
               )}
@@ -124,7 +126,7 @@ export default function Navbar() {
 
         {/* Mobile Menu */}
         {isMenuOpen && (
-          <div className="md:hidden py-4 border-t border-white/20">
+          <div className="md:hidden py-4 border-t border-white/20 dark:border-slate-700/50">
             <div className="flex flex-col space-y-3">
               {navLinks.map((link) => (
                 <Link
@@ -132,8 +134,8 @@ export default function Navbar() {
                   href={link.href}
                   className={`font-medium py-2 transition-colors duration-300 ${
                     scrolled 
-                      ? 'text-[#111827] hover:text-[#C2410C]' 
-                      : 'text-white hover:text-[#F59E0B]'
+                      ? 'text-gray-800 dark:text-gray-200 hover:text-terracotta dark:hover:text-turmeric' 
+                      : 'text-white hover:text-turmeric'
                   }`}
                   onClick={() => setIsMenuOpen(false)}
                 >
