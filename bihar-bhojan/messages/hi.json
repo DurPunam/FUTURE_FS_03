@@ -1,0 +1,90 @@
+{
+  "nav": {
+    "home": "होम",
+    "menu": "मेनू",
+    "experience": "अनुभव",
+    "about": "हमारे बारे में",
+    "contact": "संपर्क करें",
+    "admin": "एडमिन"
+  },
+  "common": {
+    "bookTable": "टेबल बुक करें",
+    "orderNow": "अभी ऑर्डर करें",
+    "learnMore": "और जानें",
+    "contactUs": "संपर्क करें",
+    "viewMenu": "मेनू देखें"
+  },
+  "hero": {
+    "tagline": "पटना के दिल में प्रामाणिक बिहारी व्यंजन",
+    "subtitle": "बिहार के समृद्ध स्वाद और परंपराओं का अनुभव करें"
+  },
+  "footer": {
+    "rights": "सर्वाधिकार सुरक्षित",
+    "followUs": "हमें फॉलो करें",
+    "restaurantName": "बिहार भोजन",
+    "tagline": "प्रामाणिक बिहारी व्यंजन",
+    "address": "123 गांधी मैदान, पटना, बिहार 800001",
+    "phone": "+91 612 123 4567",
+    "email": "info@biharbhojan.com",
+    "hours": "खुलने का समय",
+    "hoursDetail": "सोम-रवि: सुबह 11:00 - रात 10:00",
+    "quickLinks": "त्वरित लिंक",
+    "connectWithUs": "हमसे जुड़ें"
+  },
+  "menu": {
+    "addToCart": "कार्ट में जोड़ें",
+    "featured": "विशेष",
+    "unavailable": "उपलब्ध नहीं",
+    "vegetarian": "शाकाहारी",
+    "nonVegetarian": "मांसाहारी",
+    "categories": {
+      "all": "सभी",
+      "thali": "थाली",
+      "ghar-ka-khana": "घर का खाना",
+      "street-delights": "स्ट्रीट डिलाइट्स",
+      "mithai": "मिठाई",
+      "sattu-specials": "सत्तू स्पेशल"
+    },
+    "dietary": {
+      "all": "सभी",
+      "veg": "शाकाहारी",
+      "non-veg": "मांसाहारी",
+      "filterLabel": "भोजन प्राथमिकता"
+    },
+    "search": {
+      "label": "मेनू खोजें",
+      "placeholder": "व्यंजन खोजें...",
+      "ariaLabel": "मेनू आइटम खोजें",
+      "clearButton": "खोज साफ़ करें"
+    }
+  },
+  "cart": {
+    "title": "आपका कार्ट",
+    "close": "कार्ट बंद करें",
+    "subtotal": "उप-योग",
+    "tax": "कर (5%)",
+    "total": "कुल",
+    "checkout": "ऑर्डर करें",
+    "empty": {
+      "title": "आपका कार्ट खाली है",
+      "message": "शुरू करने के लिए कुछ स्वादिष्ट व्यंजन जोड़ें!",
+      "browseMenu": "मेनू देखें"
+    }
+  },
+  "whatsapp": {
+    "orderButton": "व्हाट्सएप से ऑर्डर करें",
+    "form": {
+      "title": "अपना ऑर्डर पूरा करें",
+      "subtitle": "व्हाट्सएप से ऑर्डर देने के लिए अपना विवरण दर्ज करें",
+      "name": "आपका नाम",
+      "namePlaceholder": "अपना पूरा नाम दर्ज करें",
+      "phone": "फ़ोन नंबर",
+      "phonePlaceholder": "10 अंकों का मोबाइल नंबर",
+      "address": "डिलीवरी पता",
+      "addressPlaceholder": "अपना पूरा डिलीवरी पता दर्ज करें",
+      "cancel": "रद्द करें",
+      "submit": "ऑर्डर भेजें",
+      "sending": "भेजा जा रहा है..."
+    }
+  }
+}

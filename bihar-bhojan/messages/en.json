@@ -1,0 +1,90 @@
+{
+  "nav": {
+    "home": "Home",
+    "menu": "Menu",
+    "experience": "Experience",
+    "about": "About",
+    "contact": "Contact",
+    "admin": "Admin"
+  },
+  "common": {
+    "bookTable": "Book a Table",
+    "orderNow": "Order Now",
+    "learnMore": "Learn More",
+    "contactUs": "Contact Us",
+    "viewMenu": "View Menu"
+  },
+  "hero": {
+    "tagline": "Authentic Bihari Cuisine in the Heart of Patna",
+    "subtitle": "Experience the rich flavors and traditions of Bihar"
+  },
+  "footer": {
+    "rights": "All rights reserved",
+    "followUs": "Follow Us",
+    "restaurantName": "Bihar Bhojan",
+    "tagline": "Authentic Bihari Cuisine",
+    "address": "123 Gandhi Maidan, Patna, Bihar 800001",
+    "phone": "+91 612 123 4567",
+    "email": "info@biharbhojan.com",
+    "hours": "Operating Hours",
+    "hoursDetail": "Mon-Sun: 11:00 AM - 10:00 PM",
+    "quickLinks": "Quick Links",
+    "connectWithUs": "Connect With Us"
+  },
+  "menu": {
+    "addToCart": "Add to Cart",
+    "featured": "Featured",
+    "unavailable": "Unavailable",
+    "vegetarian": "Vegetarian",
+    "nonVegetarian": "Non-Vegetarian",
+    "categories": {
+      "all": "All",
+      "thali": "Thali",
+      "ghar-ka-khana": "Ghar Ka Khana",
+      "street-delights": "Street Delights",
+      "mithai": "Mithai",
+      "sattu-specials": "Sattu Specials"
+    },
+    "dietary": {
+      "all": "All",
+      "veg": "Veg",
+      "non-veg": "Non-Veg",
+      "filterLabel": "Dietary Preference"
+    },
+    "search": {
+      "label": "Search Menu",
+      "placeholder": "Search for dishes...",
+      "ariaLabel": "Search menu items",
+      "clearButton": "Clear search"
+    }
+  },
+  "cart": {
+    "title": "Your Cart",
+    "close": "Close cart",
+    "subtotal": "Subtotal",
+    "tax": "Tax (5%)",
+    "total": "Total",
+    "checkout": "Proceed to Order",
+    "empty": {
+      "title": "Your cart is empty",
+      "message": "Add some delicious dishes to get started!",
+      "browseMenu": "Browse Menu"
+    }
+  },
+  "whatsapp": {
+    "orderButton": "Order via WhatsApp",
+    "form": {
+      "title": "Complete Your Order",
+      "subtitle": "Enter your details to place order via WhatsApp",
+      "name": "Your Name",
+      "namePlaceholder": "Enter your full name",
+      "phone": "Phone Number",
+      "phonePlaceholder": "10-digit mobile number",
+      "address": "Delivery Address",
+      "addressPlaceholder": "Enter your complete delivery address",
+      "cancel": "Cancel",
+      "submit": "Send Order",
+      "sending": "Sending..."
+    }
+  }
+}
