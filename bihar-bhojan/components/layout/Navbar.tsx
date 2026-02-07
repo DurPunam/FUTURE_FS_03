@@ -1,14 +1,13 @@
 'use client';
 
 import { useState, useEffect } from 'react';
-import Link from 'next/link';
-import { useTranslations, useLocale } from 'next-intl';
+import { Link } from '@/i18n/routing';
+import { useTranslations } from 'next-intl';
 import { useCart } from '@/contexts/CartContext';
 import LanguageToggle from './LanguageToggle';
 
 export default function Navbar() {
   const t = useTranslations();
-  const locale = useLocale();
   const { items } = useCart();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
@@ -24,10 +23,11 @@ export default function Navbar() {
   const cartItemCount = items.reduce((sum, item) => sum + item.quantity, 0);
 
   const navLinks = [
-    { href: `/${locale}`, label: t('nav.home') },
-    { href: `/${locale}/menu`, label: t('nav.menu') },
-    { href: `/${locale}/about`, label: t('nav.about') },
-    { href: `/${locale}/contact`, label: t('nav.contact') },
+    { href: '/', label: t('nav.home') },
+    { href: '/menu', label: t('nav.menu') },
+    { href: '/experience', label: t('nav.experience') },
+    { href: '/about', label: t('nav.about') },
+    { href: '/contact', label: t('nav.contact') },
   ];
 
   return (
@@ -39,7 +39,7 @@ export default function Navbar() {
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
-          <Link href={`/${locale}`} className={`text-2xl font-bold transition-colors duration-300 ${
+          <Link href="/" className={`text-2xl font-bold transition-colors duration-300 ${
             scrolled ? 'text-[#C2410C]' : 'text-white'
           }`}>
             Bihar Bhojan
@@ -68,7 +68,7 @@ export default function Navbar() {
             
             {/* Cart Badge */}
             <Link
-              href={`/${locale}/menu`}
+              href="/menu"
               className={`relative p-2 rounded-full transition-all duration-300 ${
                 scrolled 
                   ? 'hover:bg-gray-100' 

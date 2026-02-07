@@ -1,7 +1,28 @@
 import type { Metadata } from "next";
+import { Poppins, Inter, Noto_Sans_Devanagari } from "next/font/google";
 import "./globals.css";
 
+const poppins = Poppins({
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700"],
+  variable: "--font-poppins",
+  display: "swap",
+});
+
+const inter = Inter({
+  subsets: ["latin"],
+  variable: "--font-inter",
+  display: "swap",
+});
+
+const notoSansDevanagari = Noto_Sans_Devanagari({
+  subsets: ["devanagari"],
+  variable: "--font-noto-sans-devanagari",
+  display: "swap",
+});
+
 export const metadata: Metadata = {
+  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL ?? "https://biharbhojan.com"),
   title: {
     default: "Bihar Bhojan - Authentic Bihari Cuisine in Patna",
     template: "%s | Bihar Bhojan"
@@ -42,5 +63,13 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  return children;
+  return (
+    <html lang="en">
+      <body
+        className={`${poppins.variable} ${inter.variable} ${notoSansDevanagari.variable} font-inter antialiased`}
+      >
+        {children}
+      </body>
+    </html>
+  );
 }

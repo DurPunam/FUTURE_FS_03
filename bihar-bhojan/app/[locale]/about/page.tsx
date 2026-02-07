@@ -2,7 +2,7 @@
 
 import { motion } from 'framer-motion';
 import { Award, Heart, Users, Clock, Sparkles, UtensilsCrossed } from 'lucide-react';
-import Link from 'next/link';
+import { Link } from '@/i18n/routing';
 
 export default function AboutPage() {
   return (

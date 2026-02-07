@@ -1,18 +1,17 @@
 'use client';
 
-import Link from 'next/link';
-import { useTranslations, useLocale } from 'next-intl';
+import { Link } from '@/i18n/routing';
+import { useTranslations } from 'next-intl';
 
 export default function Footer() {
   const t = useTranslations();
-  const locale = useLocale();
 
   const navLinks = [
-    { href: `/${locale}`, label: t('nav.home') },
-    { href: `/${locale}/menu`, label: t('nav.menu') },
-    { href: `/${locale}/experience`, label: t('nav.experience') },
-    { href: `/${locale}/about`, label: t('nav.about') },
-    { href: `/${locale}/contact`, label: t('nav.contact') },
+    { href: '/', label: t('nav.home') },
+    { href: '/menu', label: t('nav.menu') },
+    { href: '/experience', label: t('nav.experience') },
+    { href: '/about', label: t('nav.about') },
+    { href: '/contact', label: t('nav.contact') },
   ];
 
   const socialLinks = [
