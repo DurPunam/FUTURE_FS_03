@@ -4,12 +4,10 @@
  */
 
 import { describe, it, expect, vi, beforeEach } from 'vitest';
-import { render, screen, waitFor } from '@testing-library/react';
-import userEvent from '@testing-library/user-event';
+import { render, screen } from '@testing-library/react';
 import { NextIntlClientProvider } from 'next-intl';
 import WhatsAppOrderButton from '@/components/cart/WhatsAppOrderButton';
 import { CartProvider } from '@/contexts/CartContext';
-import { CartItem } from '@/lib/types';
 
 // Mock translations
 const messages = {
@@ -95,4 +93,7 @@ describe('WhatsAppOrderButton', () => {
 
       const button = screen.getByRole('button', { name: /order via whatsapp/i });
       expect(button).toHaveClass('bg-gray-300');
-      expect(butt
+      expect(button).toHaveClass('cursor-not-allowed');
+    });
+  });
+});
